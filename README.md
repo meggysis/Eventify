@@ -4,8 +4,9 @@ Eventify is an innovative platform designed to simplify the process of buying an
 
 ## Demo Video
 
-[Eventify Prototype Demo](https://www.youtube.com/watch?v=hA24UsukDLU&ab_channel=CelebrationsCreations)  
-*Watch the prototype in action.*
+Check out our Figma prototype video and feel free to share your suggestions:  
+[Watch the full version here](https://www.youtube.com/watch?v=hA24UsukDLU&ab_channel=CelebrationsCreations)  
+[Watch the shorter version here](https://www.youtube.com/watch?v=LRXefExmPow&ab_channel=CelebrationsCreations)
 
 ## Expected User Experience
 
@@ -28,7 +29,6 @@ Eventify is designed with a user-centric approach to ensure a seamless experienc
 - **Notification System**: Users receive real-time notifications regarding likes, offers, and messages related to their listings, ensuring they stay informed and engaged.
 
 The design focuses on accessibility and user engagement, making event decoration shopping enjoyable and straightforward.
-
 
 ## Installation
 
