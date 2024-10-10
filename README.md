@@ -4,7 +4,7 @@ Eventify is an innovative platform designed to simplify the process of buying an
 
 ## Demo Video
 
-![Eventify Prototype Demo](https://youtu.be/s3ab4lyWqw8)  
+[Eventify Prototype Demo](https://youtu.be/s3ab4lyWqw8)
 *Watch the prototype in action.*
 
 ## Expected User Experience
