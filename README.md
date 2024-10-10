@@ -29,12 +29,6 @@ Eventify is designed with a user-centric approach to ensure a seamless experienc
 
 The design focuses on accessibility and user engagement, making event decoration shopping enjoyable and straightforward.
 
-# LinkedIn!
-
-View my linked in post about it here:
-
-[View my LinkedIn post here](https://www.linkedin.com/posts/meg-sissel-222398251_eventify-buy-and-sell-used-decorations-activity-7250230027458351104-6LSv?utm_source=share&utm_medium=member_desktop)
-
 
 ## Installation
 
