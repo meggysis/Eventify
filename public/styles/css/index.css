@@ -30,15 +30,16 @@ Table of Contents:
   src: url(../../fonts/LaoMuangKhong-Regular.ttf) format('truetype');
 }
 
-/* 0-1 Initial setup with sticky footer in mind */
+/* 0-1 Initial Setup */
 html, body {
   height: 100%;
   margin: 0;
 }
   
 body {
-  display: grid;
-  grid-template-rows: auto 1fr; /* auto for header, 1fr for main */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .eventify-header {
@@ -236,10 +237,11 @@ body {
 
 /* 3-0 Footer */
 footer {
+  background-color: rgba(233, 192, 113, 1);
+  width: 100%;
+  position: relative;
   bottom: 0;
   left: 0;
-  width: 100%;
-  background-color: rgba(233, 192, 113, 1);
   z-index: 10;
 }
 
@@ -316,6 +318,7 @@ footer {
 
 /* 4-0 Main */
 main {
+  flex: 1;
   margin-top: 150px;
 }
 
