@@ -316,7 +316,6 @@ footer {
 
 /* 4-0 Main */
 main {
-  padding-bottom: 100px; /* so that sticky footer doesn't block main */
   margin-top: 150px;
 }
 
