@@ -27,7 +27,7 @@ Table of Contents:
 /* 0-0 Fonts */
 @font-face {
   font-family:'LaoMuangKhong-Regular';
-  src: url(../../fonts/LaoMuangKhong-Regular.ttf) format('truetype');
+  src: url(../fonts/LaoMuangKhong-Regular.ttf) format('truetype');
 }
 
 /* 0-1 Initial Setup */
