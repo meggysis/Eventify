@@ -1,5 +1,7 @@
 /*
+
 Index
+
 Table of Contents:
 
 0-0 Fonts
@@ -71,6 +73,7 @@ body {
   top: 0;
   left: 0;
   width:100%;
+  transition: transform 0.3s ease;
 }
 
 .header-wrapper {
@@ -153,21 +156,9 @@ body {
   justify-content: flex-end;
 }
 
-.header-circle-dollar {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-.header-user-likes {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-.header-notifications {
-  max-width: 40px;
-  max-height: 40px;
-}
-
+.header-circle-dollar,
+.header-user-likes,
+.header-notifications,
 .header-user-profile {
   max-width: 40px;
   max-height: 40px;
