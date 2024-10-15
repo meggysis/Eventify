@@ -1,5 +1,7 @@
 /*
+
 Index
+
 Table of Contents:
 
 0-0 Fonts
@@ -31,15 +33,38 @@ Table of Contents:
 }
 
 /* 0-1 Initial Setup */
-html, body {
+html {
   height: 100%;
   margin: 0;
+  --5px: 0.3125rem;   
+  --6px: 0.375rem;    
+  --7px: 0.4375rem; 
+  --8px: 0.5rem;     
+  --9px: 0.5625rem;  
+  --10px: 0.625rem;   
+  --11px: 0.6875rem;
+  --12px: 0.75rem;   
+  --13px: 0.8125rem; 
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  --22px: 1.375rem;
+  --23px: 1.4375rem;
+  --24px: 1.5rem;
+  --25px: 1.5625rem;
 }
   
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
+  margin: 0;
 }
 
 .eventify-header {
@@ -48,6 +73,7 @@ body {
   top: 0;
   left: 0;
   width:100%;
+  transition: transform 0.3s ease;
 }
 
 .header-wrapper {
@@ -104,7 +130,7 @@ body {
   border-style: solid;
   border-color: rgb(204, 204, 204);
   border-radius: 5px;
-  font-size: 16px;
+  font-size: var(--16px);
 }
 
 .header-search-button {
@@ -115,7 +141,7 @@ body {
   background: none;
   border: none;
   color: rgb(102, 102, 102);
-  font-size: 25px; /* size of button */
+  font-size: var(--25px); /* size of button */
   cursor: pointer;
 }
 
@@ -130,21 +156,9 @@ body {
   justify-content: flex-end;
 }
 
-.header-circle-dollar {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-.header-user-likes {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-.header-notifications {
-  max-width: 40px;
-  max-height: 40px;
-}
-
+.header-circle-dollar,
+.header-user-likes,
+.header-notifications,
 .header-user-profile {
   max-width: 40px;
   max-height: 40px;
@@ -186,7 +200,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 40px;
   width:75%;
   margin-right:6%;
@@ -196,7 +210,7 @@ body {
   height:120%;
   width: 1px;
   background-color: black;
-  margin-right:5%;
+  margin-right:8%;
 }
 
 .header-all-container {
@@ -205,21 +219,21 @@ body {
   align-items: center;
   justify-content: flex-end;
   margin-left:6%;
-  margin-right:2%;
+  margin-right:6%;
 }
 
 .header-all-container a {
   color:black;
   text-decoration: none;
   font-family: 'LaoMuangKhong-Regular', sans-serif;
-  font-size:20px;
+  font-size:var(--20px);
 }
 
 .header-categories-container a {
   color:black;
   text-decoration: none;
   font-family: 'LaoMuangKhong-Regular', sans-serif;
-  font-size: 20px;
+  font-size: var(--20px);
 }
 
 /* 2-2 Header Sell */
@@ -302,7 +316,7 @@ footer {
 }
 
 .footer-socials i {
-  font-size: 20px;
+  font-size: var(--20px);
   color: white;
 }
 
@@ -320,6 +334,7 @@ footer {
 main {
   flex: 1;
   margin-top: 150px;
+  padding-bottom:25px;
 }
 
 .index-main-wrapper {
@@ -477,7 +492,7 @@ main {
   height: 200px; /* adjust this */
 }
 
-/* 4-3 Media Queries */
+/* 5-0 Media Queries */
 
 @media (max-width:1870px) {
   .header-search-container {
@@ -490,17 +505,21 @@ main {
   }
 }
 
+@media (max-width:1680px) {
+  .header-categories-container {
+    width:65%;
+    margin-right:4%;
+  }
+}
+
 @media (max-width:1620px) {
   .header-all-container {
     margin-right:4%;
   }
 
-  .header-all-container a {
-    font-size:18px;
-  }
-  
+  .header-all-container a,
   .header-categories-container a {
-    font-size: 18px;
+    font-size:18px;
   }
 
   .header-sell-container {
@@ -574,12 +593,9 @@ main {
     margin-left:1%;
   }
 
-  .header-all-container a {
-    font-size:14px;
-  }
-  
+  .header-all-container a,
   .header-categories-container a {
-    font-size: 14px;
+    font-size:var(--14px);
   }
 
   .header-all-container {
@@ -597,7 +613,7 @@ main {
     border-style: solid;
     border-color: rgb(204, 204, 204);
     border-radius: 5px;
-    font-size: 14px;
+    font-size: var(--14px);
   }
 
   .header-search-button {
@@ -606,44 +622,23 @@ main {
 }
 
 @media (max-width:1350px) {
-  .footer-shop-container h2 {
-    font-size: 20px;
+  .footer-shop-container h2,
+  .footer-sell-container h2,
+  .footer-support-container h2,
+  .footer-company-container h2,
+  .footer-socials-container h2 {
+    font-size: var(--20px);
   }
   
-  .footer-shop-container p {
-    font-size: 12px;
-  }
-
-  .footer-sell-container h2 {
-    font-size: 20px;
-  }
-
-  .footer-sell-container p {
-    font-size: 12px;
-  }
-
-  .footer-support-container h2 {
-    font-size: 20px;
-  }
-
-  .footer-support-container p {
-    font-size: 12px;
-  }
-
-  .footer-company-container h2 {
-    font-size: 20px;
-  }
-
+  .footer-shop-container p,
+  .footer-sell-container p,
+  .footer-support-container p,
   .footer-company-container p {
-    font-size: 12px;
-  }
-
-  .footer-socials-container h2 {
-    font-size: 20px;
+    font-size: var(--12px);
   }
 
   .footer-socials i {
-    font-size:18px;
+    font-size:var(--18px);
   }
 }
 
@@ -658,12 +653,9 @@ main {
     gap: 30px;
   }
   
-  .header-all-container a {
-    font-size:12px;
-  }
-  
+  .header-all-container a,
   .header-categories-container a {
-    font-size: 12px;
+    font-size:var(--12px);
   }
 
   .header-sell {
@@ -671,21 +663,9 @@ main {
     height:auto;
   }
 
-  .header-circle-dollar {
-    max-width: 30px;
-    max-height: 30px;
-  }
-  
-  .header-user-likes {
-    max-width: 30px;
-    max-height: 30px;
-  }
-  
-  .header-notifications {
-    max-width: 30px;
-    max-height: 30px;
-  }
-  
+  .header-circle-dollar,
+  .header-user-likes,
+  .header-notifications,
   .header-user-profile {
     max-width: 30px;
     max-height: 30px;
@@ -701,6 +681,10 @@ main {
     max-width: 35px;
     max-height: 35px;
     margin-left:1%;
+  }
+
+  .header-bottom-line {
+    margin-right:5%;
   }
 }
 
@@ -727,21 +711,9 @@ main {
     width: 30%;
   }
 
-  .header-circle-dollar {
-    max-width: 25px;
-    max-height: 25px;
-  }
-  
-  .header-user-likes {
-    max-width: 25px;
-    max-height: 25px;
-  }
-  
-  .header-notifications {
-    max-width: 25px;
-    max-height: 25px;
-  }
-  
+  .header-circle-dollar,
+  .header-user-likes,
+  .header-notifications,
   .header-user-profile {
     max-width: 25px;
     max-height: 25px;
@@ -786,47 +758,26 @@ main {
     border-style: solid;
     border-color: rgb(204, 204, 204);
     border-radius: 5px;
-    font-size: 12px;
+    font-size: var(--12px);
   }
   
-  .header-search-button {
-    font-size: 15px; /* size of button */ 
-  }
-
-  .footer-shop-container h2 {
+  .header-search-button{
     font-size: 15px;
   }
   
-  .footer-shop-container p {
-    font-size: 10px;
-  }
-
-  .footer-sell-container h2 {
-    font-size: 15px;
-  }
-
-  .footer-sell-container p {
-    font-size: 10px;
-  }
-
-  .footer-support-container h2 {
-    font-size: 15px;
-  }
-
-  .footer-support-container p {
-    font-size: 10px;
-  }
-
-  .footer-company-container h2 {
-    font-size: 15px;
-  }
-
-  .footer-company-container p {
-    font-size: 10px;
-  }
-
+  .footer-shop-container h2,
+  .footer-sell-container h2,
+  .footer-support-container h2,
+  .footer-company-container h2,
   .footer-socials-container h2 {
-    font-size: 15px;
+    font-size: var(--15px);
+  }
+  
+  .footer-shop-container p,
+  .footer-sell-container p,
+  .footer-support-container p,
+  .footer-company-container p {
+    font-size: var(--10px);
   }
 
   .footer-socials i {
@@ -838,6 +789,46 @@ main {
   .header-categories-container {
     gap: 15px;
   }
+
+  .header-all-container a,
+  .header-categories-container a {
+    font-size:var(--10px);
+  }
+}
+
+@media (max-width:700px) {
+  .header-search-box {
+    margin-left: 3%;
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-indent: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: var(--12px);
+  }
+
+  .header-categories-container {
+    width: 75%;
+  }
+}
+
+@media (max-width:680px) {
+  .header-categories-container {
+    margin-right:2%;
+  }
+
+  .header-sell {
+    max-width:70px;
+  }
+
+  .header-bottom-line {
+    margin-right: 7%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -845,21 +836,9 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .header-circle-dollar {
-    max-width: 20px;
-    max-height: 20px;
-  }
-  
-  .header-user-likes {
-    max-width: 20px;
-    max-height: 20px;
-  }
-  
-  .header-notifications {
-    max-width: 20px;
-    max-height: 20px;
-  }
-  
+  .header-circle-dollar,
+  .header-user-likes,
+  .header-notifications,
   .header-user-profile {
     max-width: 20px;
     max-height: 20px;
@@ -882,75 +861,33 @@ main {
     height: auto;
   }
 
-  .header-all-container a {
+  .header-all-container a,
+  .header-categories-container a,
+  .footer-shop-container p,
+  .footer-sell-container p,
+  .footer-support-container p,
+  .footer-company-container p,
+  .footer-socials i {
     font-size:8px;
-  }
-  
-  .header-categories-container a {
-    font-size: 8px;
   }
 
   .header-sell {
     max-width:65px;
   }
 
-  .footer-shop-container h2 {
-    font-size: 12px;
-  }
-  
-  .footer-shop-container p {
-    font-size: 8px;
-  }
-
-  .footer-sell-container h2 {
-    font-size: 12px;
-  }
-
-  .footer-sell-container p {
-    font-size: 8px;
-  }
-
-  .footer-support-container h2 {
-    font-size: 12px;
-  }
-
-  .footer-support-container p {
-    font-size: 8px;
-  }
-
-  .footer-company-container h2 {
-    font-size: 12px;
-  }
-
-  .footer-company-container p {
-    font-size: 8px;
-  }
-
+  .footer-shop-container h2,
+  .footer-sell-container h2,
+  .footer-support-container h2,
+  .footer-company-container h2,
   .footer-socials-container h2 {
     font-size: 12px;
-  }
-
-  .footer-socials i {
-    font-size:8px;
   }
 }
 
 @media (max-width:600px) {
-  .header-circle-dollar {
-    max-width: 15px;
-    max-height: 15px;
-  }
-  
-  .header-user-likes {
-    max-width: 15px;
-    max-height: 15px;
-  }
-  
-  .header-notifications {
-    max-width: 15px;
-    max-height: 15px;
-  }
-  
+  .header-circle-dollar,
+  .header-user-likes,
+  .header-notifications,
   .header-user-profile {
     max-width: 15px;
     max-height: 15px;
@@ -1020,10 +957,27 @@ main {
   }
 }
 
+@media (max-width:512px) {
+  .header-sell {
+    max-width:55px;
+  }
+}
+
+@media (max-width:500px) {
+  .header-categories-container {
+    gap: 5px;
+  }
+}
+
 @media (max-width:490px) {
   .brand-logo {
     max-width:60px;
     height: auto;
+  }
+
+  .user-icon-wrapper {
+    gap: 12px;
+    min-width:80px;
   }
 }
 
@@ -1039,25 +993,12 @@ main {
 
   .user-icon-wrapper {
     width: 28%;
-    min-width: 100px;
     gap: 8px;
   }
 
-  .header-circle-dollar {
-    max-width: 10px;
-    max-height: 10px;
-  }
-  
-  .header-user-likes {
-    max-width: 10px;
-    max-height: 10px;
-  }
-  
-  .header-notifications {
-    max-width: 10px;
-    max-height: 10px;
-  }
-  
+  .header-circle-dollar,
+  .header-user-likes,
+  .header-notifications,
   .header-user-profile {
     max-width: 10px;
     max-height: 10px;
@@ -1104,44 +1045,20 @@ main {
     height: auto;
   }
 
-  .footer-shop-container h2 {
-    font-size: 8px;
-  }
-  
-  .footer-shop-container p {
-    font-size: 5px;
-  }
-
-  .footer-sell-container h2 {
-    font-size: 8px;
-  }
-
-  .footer-sell-container p {
-    font-size: 5px;
-  }
-
-  .footer-support-container h2 {
-    font-size: 8px;
-  }
-
-  .footer-support-container p {
-    font-size: 5px;
-  }
-
-  .footer-company-container h2 {
-    font-size: 8px;
-  }
-
-  .footer-company-container p {
-    font-size: 5px;
-  }
-
+  .footer-shop-container h2,
+  .footer-sell-container h2,
+  .footer-support-container h2,
+  .footer-company-container h2,
   .footer-socials-container h2 {
     font-size: 8px;
   }
-
+  
+  .footer-shop-container p,
+  .footer-sell-container p,
+  .footer-support-container p,
+  .footer-company-container p,
   .footer-socials i {
-    font-size:5px;
+    font-size: 5px;
   }
 
   .footer-socials {
@@ -1150,5 +1067,9 @@ main {
     margin-top:5%;
     align-items: flex-start;
   }
-}
 
+  .header-all-container a,
+  .header-categories-container a {
+    font-size:6px;
+  }
+}
